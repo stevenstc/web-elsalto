@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/wallet/static/js/main.4a70e771.chunk.js",
+    "main.js.map": "/wallet/static/js/main.4a70e771.chunk.js.map",
+    "runtime-main.js": "/wallet/static/js/runtime-main.4eca7ed5.js",
+    "runtime-main.js.map": "/wallet/static/js/runtime-main.4eca7ed5.js.map",
+    "static/js/2.db0aac5b.chunk.js": "/wallet/static/js/2.db0aac5b.chunk.js",
+    "static/js/2.db0aac5b.chunk.js.map": "/wallet/static/js/2.db0aac5b.chunk.js.map",
+    "index.html": "/wallet/index.html",
+    "precache-manifest.d31759ed5b6ac043e0898fa865e0b934.js": "/wallet/precache-manifest.d31759ed5b6ac043e0898fa865e0b934.js",
+    "service-worker.js": "/wallet/service-worker.js",
+    "static/js/2.db0aac5b.chunk.js.LICENSE.txt": "/wallet/static/js/2.db0aac5b.chunk.js.LICENSE.txt",
+    "static/media/TronLinkLogo.png": "/wallet/static/media/TronLinkLogo.f8e7d99a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4eca7ed5.js",
+    "static/js/2.db0aac5b.chunk.js",
+    "static/js/main.4a70e771.chunk.js"
+  ]
+}
