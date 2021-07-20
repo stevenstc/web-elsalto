@@ -1,11 +1,5 @@
 import React, { Component } from "react";
 
-import Historial from "../Historial/";
-import Oficina from "../Oficina";
-import Oficina2 from "../Oficina2";
-import TronLinkGuide from "../TronLinkGuide";
-import PanelOwner from "../PanelOwner";
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -67,15 +61,6 @@ class App extends Component {
 
   render() {
 
-    if (false)
-      return (
-        <>
-          <div className="container">
-            <TronLinkGuide installed />
-          </div>
-        </>
-      );
-
     return (
       <>
         <div className="wrap">
@@ -123,15 +108,13 @@ class App extends Component {
                     data-toggle="modal"
                     data-target="#modalNuevo"
                   >
-                    Agregar nuevo niño
-                    <span className="glyphicon glyphicon-plus"></span>
+                    Agregar <span className="glyphicon glyphicon-plus"></span>
                   </button>
                 </caption>
 
                 <tr className="table table-bordered">
-                  <td>Nombre del niño</td>
+                  <td>Nombre</td>
                   <td>Precio</td>
-                  <td>Tiempo</td>
                   <td>Entrada</td>
                   <td>Salida</td>
                   <td>Editar</td>
@@ -141,7 +124,6 @@ class App extends Component {
                 <tr id="1" className="table table-bordered">
                   <td>julian alberto</td>
                   <td>$10000</td>
-                  <td>15 min</td>
                   <td>5:48 PM</td>
                   <td>6:00 PM</td>
                   <td>
@@ -160,27 +142,7 @@ class App extends Component {
                   </td>
                 </tr>
 
-                <tr id="1">
-                  <td>julian alberto</td>
-                  <td>$10000</td>
-                  <td>15 min</td>
-                  <td>5:48 PM</td>
-                  <td>6:00 PM</td>
-                  <td>
-                    <button
-                      className="btn btn-warning glyphicon glyphicon-pencil"
-                      data-toggle="modal"
-                      data-target="#modalEdicion"
-                      onclick="agregaform(' $datos ')"
-                    ></button>
-                  </td>
-                  <td>
-                    <button
-                      className="btn btn-danger glyphicon glyphicon-remove"
-                      onclick="preguntarSiNo(' $ver[0] ')"
-                    ></button>
-                  </td>
-                </tr>
+                
               </table>
             </article>
             <article id="tab2">
