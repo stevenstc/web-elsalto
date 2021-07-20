@@ -1,141 +1,55 @@
 <!DOCTYPE html>
-<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html class="no-js" lang="en-US">
-<!--<![endif]-->
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>Tabla dinamica</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="librerias/bootstrap/css/bootstrap.css"
+    />
 
-<head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="librerias/alertifyjs/css/alertify.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="librerias/alertifyjs/css/themes/default.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="librerias/select2/css/select2.css"
+    />
 
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>WALLET | Xuma Capital</title>
-    <meta name="description" content="a page when you can invest an trade in crypto calling wozx ">
-    <meta name="author" content="Miguel Merchan">
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="stylesheet" href="font-awesome.css" />
+    
 
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- SEO tags -->
-
-    <meta property="og:title" content="WALLET | Xuma Capital" />
-    <meta property="og:description" content="Consulta tu saldo en GPX" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://office.goldprimexuma.org/wallet " />
-    <meta property="og:image" content="https://office.goldprimexuma.org/images/goldprimes.jpg" />
-
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
-
-    <!-- script
-    ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
-
-    <!-- favicons
-    ================================================== -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-</head>
-
-<body id="top">
-
-    <!-- header
-    ================================================== -->
-    <header class="s-header">
-
-        <div class="header-logo">
-            <a class="site-logo" href="https://office.goldprimexuma.org/">
-                <img src="images/logo.png" alt="Homepage">
-            </a>
-        </div>
-
-
-    </header> <!-- end s-header -->
-
-
-    <!-- REACT APP
-    ================================================== -->
-   
-
-    <section id="contact" class="s-contact">
-
-        <div class="row section-header" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead">Wallet</h3>
-                <h1 class="display-2 display-2--light">Xuma Capital</h1>
-            </div>
-        </div>
-
-        <input id="sponsor" type="hidden" value="Mi abuela es la mejor" readonly>
-    	<div id="root"></div>
-
-    </section>
-
-    <!-- footer
-    ================================================== -->
-    <footer>
-
-        <div class="row footer-main">
-
-            <div class="col-twelve tab-full footer-desc">
-
-                
-
-            </div>
-
-
-        </div> <!-- end footer-main -->
-
-        <div class="row footer-bottom">
+  </head>
+  <body>
+    <div id="root"></div>
 
 
 
-            <div class="col-twelve">
-                <div class="copyright">
-                    <span>© Copyright 2021  Xuma Capital.  All Rights Reserved.</span>
-                    <span>Site by <a href="https://goldprimexuma.org/">Gold Prime Xuma</a></span>
-                    <span id="version">V. 1.0.2</a></span>
 
-                </div>
-
-                <div class="go-top">
-                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
-                </div>
-            </div>
-
-        </div> <!-- end footer-bottom -->
-
-    </footer> <!-- end footer -->
+    <script src="librerias/jquery-3.3.1.js"></script>
+    <script src="librerias/moment.js"></script>
+    <script src="js/funciones.js"></script>
+    <script src="js/formatoHora.js"></script>
+    <script src="librerias/bootstrap/js/bootstrap.js"></script>
+    <script src="librerias/alertifyjs/alertify.js"></script>
+    <script src="librerias/select2/js/select2.js"></script>
 
 
-    <!-- preloader
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader">
-            <div class="line-scale-pulse-out">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
-</body>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="main.js"></script>
+    
+  </body>
 </html>
