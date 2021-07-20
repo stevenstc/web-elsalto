@@ -11,17 +11,20 @@ class App extends Component {
     super(props);
 
     this.state = {
-      tronWeb: {
-        installed: false,
-        loggedIn: false,
-      },
+      strTime: 0,
     };
 
     this.registrar = this.registrar.bind(this);
+    this.hora = this.hora.bind(this);
+    this.relog = this.relog.bind(this);
 
   }
 
   async componentDidMount() {
+
+    setInterval(() => this.relog(),1*1000);
+
+    
 
   }
 
@@ -29,20 +32,40 @@ class App extends Component {
 
   }
 
-  
+  hora(date){
 
-  render() {
-      var date = new Date();
       var hours = date.getHours();
       var minutes = date.getMinutes();
       var ampm = hours >= 12 ? 'pm' : 'am';
       hours = hours % 12;
-      hours = hours ? hours : 12; // the hour '0' should be '12'
+      hours = hours ? hours : 12; 
       minutes = minutes < 10 ? '0'+minutes : minutes;
       var strTime = hours + ':' + minutes + ' ' + ampm;
+      
+      return strTime;
 
-   
+  }
+
+  relog(){
+
+      var date = new Date();
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var ampm = hours >= 12 ? 'pm' : 'am';
+    hours = hours % 12;
+    hours = hours ? hours : 12; 
+    minutes = minutes < 10 ? '0'+minutes : minutes;
+    var strTime = hours + ':' + minutes + ' ' + ampm;
     
+    this.setState({
+      strTime: strTime,
+    });
+
+}
+
+  
+
+  render() {
 
     if (false)
       return (
@@ -85,7 +108,7 @@ class App extends Component {
             <li>
               <a href="#tab1">
                 <span className="fa fa-clock"></span>
-                <span className="tab-text">{strTime}</span>
+                <span className="tab-text">{this.state.strTime}</span>
               </a>
             </li>
           </ul>
@@ -107,7 +130,8 @@ class App extends Component {
 
                 <tr className="table table-bordered">
                   <td>Nombre del niño</td>
-                  <td>Precio voleta</td>
+                  <td>Precio</td>
+                  <td>Tiempo</td>
                   <td>Entrada</td>
                   <td>Salida</td>
                   <td>Editar</td>
@@ -117,6 +141,7 @@ class App extends Component {
                 <tr id="1" className="table table-bordered">
                   <td>julian alberto</td>
                   <td>$10000</td>
+                  <td>15 min</td>
                   <td>5:48 PM</td>
                   <td>6:00 PM</td>
                   <td>
@@ -138,6 +163,7 @@ class App extends Component {
                 <tr id="1">
                   <td>julian alberto</td>
                   <td>$10000</td>
+                  <td>15 min</td>
                   <td>5:48 PM</td>
                   <td>6:00 PM</td>
                   <td>
